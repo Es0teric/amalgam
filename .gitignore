@@ -1,5 +1,5 @@
 /bootstrap/compiled.php
-app/config/local/*.php
+app/config/local/
 /vendor
 composer.phar
 composer.lock
