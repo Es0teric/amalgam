@@ -14,12 +14,12 @@ class PagesController extends BaseController {
 
 	/**
 	 * Process login data and redirect to dashboard on success
-	 * @return [type]
+	 * @return Routing\Redirector redirects user based on credentials
 	 */
 	public function doLogin()
 	{
 		//process login
-		var_dump(Input::all());
+		//var_dump(Input::all());
 
 		// validate the info, create rules for the inputs
 		$rules = array(
@@ -39,7 +39,6 @@ class PagesController extends BaseController {
 		} 
 		else 
 		{
-
 			// create our user data for the authentication
 			$userdata = array(
 				'email' 	=> Input::get('email'),
