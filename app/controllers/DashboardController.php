@@ -19,6 +19,14 @@ class DashboardController extends BaseController {
 	public function showDashboard()
 	{
 		//return dashboard view
+		if(Sentry::check())
+		{
+			echo "logged in!";
+		}
+		else
+		{
+			Redirect::to('login')->with('message', 'Login failed, man!');
+		}
 	}
 
 }

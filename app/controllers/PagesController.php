@@ -61,15 +61,15 @@ class PagesController extends BaseController {
 
 				// validation successful!
 				// redirect them to the dashboard section
-				// return Redirect::to('dashboard');
+				return Redirect::to('dashboard');
 				// for now we'll just echo success (even though echoing in a controller is bad)
-				echo 'SUCCESS!';
+				//echo 'SUCCESS!';
 
 			} 
 			else 
 			{	 	
 				// validation not successful, send back to form	
-				return Redirect::to('login');
+				return Redirect::to('login')->with('flash_message', 'Login failed!');
 
 			}
 		}
