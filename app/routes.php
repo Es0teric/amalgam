@@ -18,4 +18,4 @@ Route::get('/', function()
 
 Route::get('login', array('uses' => 'PagesController@showLogin'));
 Route::post('login', array('uses' => 'PagesController@doLogin'));
-Route::get('dashboard', array('uses' => 'DashboardController@showDashboard'));
+Route::get('dashboard', array('before' => 'auth', 'uses' => 'DashboardController@showDashboard'));
