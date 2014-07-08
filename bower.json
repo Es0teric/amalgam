@@ -1,0 +1,16 @@
+{
+  "name": "amalgam",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Es0teric/amalgam",
+  "authors": [
+    "G. Leo"
+  ],
+  "description": "Components for amalgam project",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "neat": "~1.6.0",
+    "bitters": "~0.10.0",
+    "bourbon": "~4.0.2"
+  }
+}
