@@ -1,9 +1,32 @@
 <html lang="en">
 	<head>
 		<title>{{ $title }}</title>	
+		<link rel="stylesheet" type="text/css" href="/assets/build/css/global/app.css">
 	</head>
 	
 	<body>
+
+		<div class="cards">
+  <div class="card">
+    <div class="card-image">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+    </div>
+    <div class="card-header">
+      First Card
+    </div>
+    <div class="card-copy">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.</p>
+    </div>
+    <div class="card-stats">
+      <ul>
+        <li>98<span>Items</span></li>
+        <li>298<span>Things</span></li>
+        <li>923<span>Objects</span></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+
 
 		<div class="container">
 		

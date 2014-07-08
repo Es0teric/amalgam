@@ -24,11 +24,15 @@ module.exports = function(grunt) {
     sass: {                              // Task
       dist: {                            // Target
         options: {                       // Target options
-          style: 'expanded'
+          style: 'expanded',
+          loadPath: [
+            'public/assets/bower/bourbon/dist/',
+            'public/assets/source/bower/bitters/app/assets/stylesheets',
+            'public/assets/source/bower/neat/app/assets/stylesheets'
+          ]
         },
         files: {                         // Dictionary of files
-          'main.css': 'main.scss',       // 'destination': 'source'
-          'widgets.css': 'widgets.scss'
+          'public/assets/build/css/global/app.css': 'public/assets/source/app.scss',       // 'destination': 'source'
         }
       }
     },
@@ -39,13 +43,6 @@ module.exports = function(grunt) {
       dist: {
         src: '<%= concat.dist.dest %>',
         dest: 'dist/<%= pkg.name %>.min.js'
-      }
-    },
-      gruntfile: {
-        src: 'Gruntfile.js'
-      },
-      lib_test: {
-        src: ['lib/**/*.js', 'test/**/*.js']
       }
     },
     nodeunit: {
