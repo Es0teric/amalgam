@@ -3,6 +3,73 @@
 @import "bower/neat/app/assets/stylesheets/neat";
 @import "bower/bitters/app/assets/stylesheets/base";
 
+/** for login page **/
+
+#container {
+  @include outer-container;
+  @include shift(3);
+
+  .login_container {
+    @include span-columns(8);
+
+      & form {
+        margin-top: 30px;
+        @include shift(2)
+      }
+
+      & h2 {
+        text-align: center;
+      }
+
+      .email, .pass {
+        text-align: right
+      }
+
+      .email {
+        
+        clear: both;
+
+        & label {
+          @include span-columns(3);
+          padding-top: 10px;
+        }
+
+        & #email {
+            @include span-columns(5)
+        }
+
+      }
+
+      .pass {
+        clear: both;
+
+        & label {
+          @include span-columns(3);
+          padding-top: 10px;
+        }
+
+        & #pass {
+          @include span-columns(5)
+        }
+      }
+
+      .remember {
+        clear: both;
+        @include shift(3);
+        @include span-columns(4)
+      }
+
+      .submit {
+        clear: both;
+        @include span-columns(3)
+      }
+
+  }
+
+}
+
+/** END LOGIN **/
+
 .cards {
   @include clearfix;
 }

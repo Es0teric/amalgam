@@ -250,6 +250,104 @@ input[type="submit"] {
   white-space: nowrap;
 }
 
+/** for login page **/
+#container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: 25.58941%;
+}
+#container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#container .login_container {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+}
+#container .login_container:last-child {
+  margin-right: 0;
+}
+#container .login_container form {
+  margin-top: 30px;
+  margin-left: 17.05961%;
+}
+#container .login_container h2 {
+  text-align: center;
+}
+#container .login_container .email, #container .login_container .pass {
+  text-align: right;
+}
+#container .login_container .email {
+  clear: both;
+}
+#container .login_container .email label {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  padding-top: 10px;
+}
+#container .login_container .email label:last-child {
+  margin-right: 0;
+}
+#container .login_container .email #email {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%;
+}
+#container .login_container .email #email:last-child {
+  margin-right: 0;
+}
+#container .login_container .pass {
+  clear: both;
+}
+#container .login_container .pass label {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  padding-top: 10px;
+}
+#container .login_container .pass label:last-child {
+  margin-right: 0;
+}
+#container .login_container .pass #pass {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%;
+}
+#container .login_container .pass #pass:last-child {
+  margin-right: 0;
+}
+#container .login_container .remember {
+  clear: both;
+  margin-left: 25.58941%;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+}
+#container .login_container .remember:last-child {
+  margin-right: 0;
+}
+#container .login_container .submit {
+  clear: both;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+}
+#container .login_container .submit:last-child {
+  margin-right: 0;
+}
+
+/** END LOGIN **/
 .cards:after {
   content: "";
   display: table;
