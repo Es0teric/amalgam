@@ -123,7 +123,8 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Cartalyst\Sentry\SentryServiceProvider',
 		'Sajjadrad\Invi\InviServiceProvider',
-		'Barryvdh\Debugbar\ServiceProvider'
+		'Barryvdh\Debugbar\ServiceProvider',
+		'Jenssegers\Mongodb\MongodbServiceProvider'
 
 	),
 
@@ -192,7 +193,8 @@ return array(
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
 		'Sentry'		  => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
-		'Debugbar'		  => 'Barryvdh\Debugbar\Facade'
+		'Debugbar'		  => 'Barryvdh\Debugbar\Facade',
+		'Moloquent'       => 'Jenssegers\Mongodb\Model'
 
 	),
 

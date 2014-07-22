@@ -19,7 +19,7 @@
 		<div id="container">
 
 			<div class="login_container"> 
-
+			
 				{{ Form::open(array('url' => 'login', 'method' => 'POST')) }}
 
 					<!-- are there errors? -->

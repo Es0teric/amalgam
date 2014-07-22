@@ -8,7 +8,9 @@
 		"cartalyst/sentry" : "2.1.*",
 		"sajjadrad/invi" : "dev-master",
 		"guzzlehttp/guzzle"	: "4.*",
-		"barryvdh/laravel-debugbar" : "1.*"
+		"barryvdh/laravel-debugbar" : "1.*",
+		"way/generators": "2.*",
+		"jenssegers/mongodb": "*"
 	},
 	"autoload": {
 		"classmap": [

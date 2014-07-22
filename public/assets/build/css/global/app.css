@@ -2303,6 +2303,13 @@ body {
   background-color: #ececec;
 }
 
+.logout_success {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
 #container {
   max-width: 68em;
   margin-left: auto;
@@ -2349,7 +2356,14 @@ body {
 #container .login_container form {
   padding-top: 30px;
   padding-bottom: 30px;
-  margin-left: 8.5298%;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 91.4702%;
+  margin-left: 25.58941%;
+}
+#container .login_container form:last-child {
+  margin-right: 0;
 }
 #container .login_container .email {
   clear: both;
@@ -2357,7 +2371,7 @@ body {
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%;
-  margin-left: 25.58941%;
+  /*@include shift(2);*/
 }
 #container .login_container .email:last-child {
   margin-right: 0;
@@ -2382,7 +2396,7 @@ body {
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%;
-  margin-left: 25.58941%;
+  /*@include shift(2);*/
 }
 #container .login_container .pass:last-child {
   margin-right: 0;
@@ -2403,7 +2417,7 @@ body {
 }
 #container .login_container .remember {
   clear: both;
-  margin-left: 25.58941%;
+  /*@include shift(3);*/
   float: left;
   display: block;
   margin-right: 2.35765%;
@@ -2416,13 +2430,14 @@ body {
   clear: both;
   padding-top: 25px;
   padding-bottom: 35px;
-  margin-left: 25.58941%;
+  /*@include shift(2);*/
 }
 #container .login_container .submit input[type="submit"] {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 57.35098%;
+  width: 48.82117%;
+  /*margin-left: 3px;*/
 }
 #container .login_container .submit input[type="submit"]:last-child {
   margin-right: 0;
