@@ -26,7 +26,7 @@ $app = new Illuminate\Foundation\Application;
 
 $env = $app->detectEnvironment(array(
 
-	'local' => array('stratus-es0'),
+	'local' => array('stratus-es0', 'exia-es0'),
 	'prod'	=> array('do-prod')
 
 ));

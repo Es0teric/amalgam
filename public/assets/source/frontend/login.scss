@@ -1,0 +1,116 @@
+/**
+ * BEGIN LOGIN
+ */
+
+body {
+  background-color: #ececec;
+}
+
+.logout_success {
+  @extend %flash-success;  
+  @include border-top-radius(5px);
+  @include border-bottom-radius(5px);
+}
+
+#container {
+  @include outer-container;
+  @include shift(3);
+
+  & h2 {
+    text-align: center;
+    @include span-columns(4);
+    @include shift(2);
+  }
+
+  .login_container {
+    clear: both;
+    @include span-columns(8);
+    margin-top: 50px;
+    padding: 5px;
+    background-color: white;
+    @include border-top-radius(5px);
+    @include border-bottom-radius(5px);
+    border-top: 1px solid rgba( 0, 0, 0, 0.15 );
+    border-right: 1px solid rgba( 0, 0, 0, 0.15 );
+    border-left: 1px solid rgba( 0, 0, 0, 0.15 );
+    border-bottom: 3px solid rgba( 0, 0, 0, 0.30 );
+
+      & form {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        @include span-columns(11);
+        @include shift(3);
+      }
+
+      .email {
+        
+        clear: both;
+        @include span-columns(6);
+        /*@include shift(2);*/
+
+        & input[type="text"] {
+          padding-left: 35px;
+        }
+
+        & .icon-holder {
+          position: absolute;
+          margin-top: 10px;
+          margin-left: 10px;
+          opacity: 0.5;
+          cursor: pointer;
+
+          &:hover {
+            opacity: 0.9;
+            cursor: pointer;
+          }
+
+        }
+
+      }
+
+      .pass {
+        clear: both;
+        @include span-columns(6);
+        /*@include shift(2);*/
+
+        & input[type="password"] {
+          padding-left: 35px;
+        }
+
+        & .icon-holder {
+          position: absolute;
+          margin-top: 10px;
+          margin-left: 10px;
+          opacity: 0.5;
+          cursor: pointer;
+
+          &:hover {
+            opacity: 0.9;
+            cursor: pointer;
+          }
+
+        }
+      }
+
+      .remember {
+        clear: both;
+        /*@include shift(3);*/
+        @include span-columns(4)
+      }
+
+      .submit {
+        clear: both;
+        padding-top: 25px;
+        padding-bottom: 35px;
+
+        /*@include shift(2);*/
+        
+        & input[type="submit"] {
+          @include span-columns(6);
+          /*margin-left: 3px;*/
+        }
+      }
+
+  }
+
+}

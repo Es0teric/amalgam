@@ -4,8 +4,13 @@
 	"keywords": ["framework", "laravel"],
 	"license": "MIT",
 	"require": {
-		"laravel/framework": "4.2.*",
-		"cartalyst/sentry": "2.1.*"
+		"laravel/framework" : "4.2.*",
+		"cartalyst/sentry" : "2.1.*",
+		"sajjadrad/invi" : "dev-master",
+		"guzzlehttp/guzzle"	: "4.*",
+		"barryvdh/laravel-debugbar" : "1.*",
+		"way/generators": "2.*",
+		"jenssegers/mongodb": "*"
 	},
 	"autoload": {
 		"classmap": [
@@ -24,7 +29,9 @@
 		],
 		"post-update-cmd": [
 			"php artisan clear-compiled",
-			"php artisan optimize"
+			"php artisan optimize",
+			"php artisan debugbar:publish",
+			"php artisan dump-autoload"
 		],
 		"post-create-project-cmd": [
 			"php artisan key:generate"
