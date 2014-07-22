@@ -16,6 +16,7 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
-Route::get('login', array('uses' => 'PagesController@showLogin'));
+Route::get('login', array('as' => 'login', 'uses' => 'PagesController@showLogin'));
 Route::post('login', array('uses' => 'PagesController@doLogin'));
+Route::get('logout', array('as' => 'logout', 'uses' => 'PagesController@doLogout'));
 Route::get('dashboard', array('before' => 'auth', 'uses' => 'DashboardController@showDashboard'));

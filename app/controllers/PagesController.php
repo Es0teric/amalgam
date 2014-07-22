@@ -74,4 +74,17 @@ class PagesController extends BaseController {
 		}
 	}
 
+	/**
+	 * Fire logout
+	 * @return Redirect\Logout
+	 */
+	public function doLogout() 
+	{
+		if(Sentry::check())
+		{
+			Sentry::logout();
+			return Redirect::to('login')->with('logout_message', 'Successfully logged out!');
+		}
+	}
+
 }

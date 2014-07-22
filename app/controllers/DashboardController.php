@@ -21,7 +21,7 @@ class DashboardController extends BaseController {
 		//return dashboard view
 		if(Sentry::check())
 		{
-			echo "logged in!";
+			return View::make('dashboard');
 		}
 		else
 		{
