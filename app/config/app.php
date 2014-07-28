@@ -124,7 +124,8 @@ return array(
 		'Cartalyst\Sentry\SentryServiceProvider',
 		'Sajjadrad\Invi\InviServiceProvider',
 		'Barryvdh\Debugbar\ServiceProvider',
-		'Jenssegers\Mongodb\MongodbServiceProvider'
+		'Jenssegers\Mongodb\MongodbServiceProvider',
+		'Way\Generators\GeneratorsServiceProvider'
 
 	),
 
@@ -194,8 +195,9 @@ return array(
 		'View'            => 'Illuminate\Support\Facades\View',
 		'Sentry'		  => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
 		'Debugbar'		  => 'Barryvdh\Debugbar\Facade',
-		'Moloquent'       => 'Jenssegers\Mongodb\Model'
-
+		'Moloquent'       => 'Jenssegers\Mongodb\Model',
+		'Carbon'		  => 'Carbon\Carbon'
+		
 	),
 
 );

@@ -10,7 +10,8 @@
 		"guzzlehttp/guzzle"	: "4.*",
 		"barryvdh/laravel-debugbar" : "1.*",
 		"way/generators": "2.*",
-		"jenssegers/mongodb": "*"
+		"jenssegers/mongodb": "*",
+		"fzaninotto/faker": "1.5.*@dev"
 	},
 	"autoload": {
 		"classmap": [

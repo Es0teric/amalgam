@@ -14,13 +14,14 @@ class DashboardController extends BaseController {
 
 	/**
 	 * Shows dashboard view
-	 * @return [type]
+	 * @return void
 	 */
 	public function showDashboard()
 	{
 		//return dashboard view
 		if(Sentry::check())
 		{
+			Event::fire('manga.load');
 			return View::make('dashboard');
 		}
 		else
