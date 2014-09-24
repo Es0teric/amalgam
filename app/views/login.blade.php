@@ -8,12 +8,12 @@
 		<div class="container">
 		
 			<h2>Login</h2>
-
 			{{ Form::open(array('url' => 'login', 'method' => 'POST')) }}
 
 				<!-- are there errors? -->
 				<p>
 					{{ $errors->first('email') }}
+					<br>
 					{{ $errors->first('pass') }}
 				</p>
 
