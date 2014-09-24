@@ -14,12 +14,12 @@ class PagesController extends BaseController {
 
 	/**
 	 * Process login data and redirect to dashboard on success
-	 * @return [type]
+	 * @return Routing\Redirector redirects user based on credentials
 	 */
 	public function doLogin()
 	{
 		//process login
-		var_dump(Input::all());
+		//var_dump(Input::all());
 
 		// validate the info, create rules for the inputs
 		$rules = array(
@@ -39,7 +39,6 @@ class PagesController extends BaseController {
 		} 
 		else 
 		{
-
 			// create our user data for the authentication
 			$userdata = array(
 				'email' 	=> Input::get('email'),
@@ -61,17 +60,30 @@ class PagesController extends BaseController {
 
 				// validation successful!
 				// redirect them to the dashboard section
-				// return Redirect::to('dashboard');
+				return Redirect::to('dashboard');
 				// for now we'll just echo success (even though echoing in a controller is bad)
-				echo 'SUCCESS!';
+				//echo 'SUCCESS!';
 
 			} 
 			else 
 			{	 	
 				// validation not successful, send back to form	
-				return Redirect::to('login');
+				return Redirect::to('login')->with('flash_message', 'Login failed!');
 
 			}
+		}
+	}
+
+	/**
+	 * Fire logout
+	 * @return Redirect\Logout
+	 */
+	public function doLogout() 
+	{
+		if(Sentry::check())
+		{
+			Sentry::logout();
+			return Redirect::to('login')->with('logout_message', 'Successfully logged out!');
 		}
 	}
 

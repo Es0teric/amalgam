@@ -4,6 +4,7 @@ app/config/local/
 composer.phar
 composer.lock
 .env.*.php
+.sass-cache
 .env.php
 .DS_Store
 Thumbs.db
